@@ -3,13 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saudação Minimalista</title>
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#app">Início</a></li>
+                <li><a href="#about-me">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#featured-projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div id="app">
         <h1 id="greeting"></h1>
     </div>
+
+    <section id="about-me">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Sou um desenvolvedor apaixonado por criar soluções inovadoras e eficientes. Com experiência em várias tecnologias web, estou sempre buscando novos desafios e oportunidades para aprender e crescer.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Minhas Habilidades</h2>
+        <div class="skill-bars">
+            <div class="skill">
+                <span class="skill-name">HTML/CSS</span>
+                <div class="skill-bar" style="width: 90%;"></div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar" style="width: 85%;"></div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">React</span>
+                <div class="skill-bar" style="width: 80%;"></div>
+            </div>
+            <div class="skill">
+                <span class="skill-name">Node.js</span>
+                <div class="skill-bar" style="width: 75%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-projects">
+        <h2>Projetos Destacados</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto 1.</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto 2.</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="project-card">
+                <h3>Projeto 3</h3>
+                <p>Descrição breve do projeto 3.</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu Email" required>
+            <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
