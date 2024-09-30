@@ -1,0 +1,33 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 1s ease;
+}
+
+#greeting {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos específicos para cada período */
+.morning {
+  background: linear-gradient(135deg, #87CEEB, #E0F6FF);
+}
+
+.afternoon {
+  background: linear-gradient(135deg, #FF7F50, #FFA07A);
+}
+
+.night {
+  background: linear-gradient(135deg, #191970, #000080, #4B0082);
+}
